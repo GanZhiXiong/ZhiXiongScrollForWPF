@@ -1,0 +1,160 @@
+﻿<Window
+    x:Class="CustomerScrollViewTest.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CustomerScrollViewTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Window1"
+    Width="720"
+    Height="300"
+    mc:Ignorable="d">
+    <Window.Resources />
+
+    <StackPanel Orientation="Horizontal">
+        <ScrollViewer
+            Name="ScrollViewer"
+            Width="200"
+            Margin="0,0,0,0"
+            MouseWheel="UIElement_OnMouseWheel"
+            PreviewMouseWheel="UIElement_OnPreviewMouseWheel"
+            Style="{StaticResource for_scrollviewer}">
+            <DataGrid Name="DataGridTest" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Binding="{Binding Name}"
+                        Header="Name"
+                        IsReadOnly="True" />
+                    <DataGridTextColumn
+                        Binding="{Binding Value}"
+                        Header="Value"
+                        IsReadOnly="True" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </ScrollViewer>
+
+        <ScrollViewer
+            Name="ScrollViewer1"
+            Width="300"
+            Margin="0,0,0,0"
+            MouseWheel="UIElement_OnMouseWheel"
+            PreviewMouseWheel="UIElement_OnPreviewMouseWheel1"
+            Style="{StaticResource for_scrollviewer}">
+            <FlowDocumentScrollViewer
+                Margin="0,0,0,0"
+                Padding="5,0,0,0"
+                HorizontalScrollBarVisibility="Auto"
+                VerticalScrollBarVisibility="Auto">
+
+                <FlowDocument>
+                    <Table
+                        Margin="0,0,0,0"
+                        Padding="0,0,0,0"
+                        BorderBrush="DarkRed"
+                        CellSpacing="20"
+                        LineHeight="1">
+                        <Table.Columns>
+                            <TableColumn />
+                            <TableColumn />
+                            <TableColumn />
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell ColumnSpan="2">
+                                    <Paragraph
+                                        FontFamily="Segoe UI Semilight"
+                                        FontSize="16"
+                                        Foreground="Black"
+                                        LineHeight="36">
+                                        Server
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow
+                                Background="#F1F1F1"
+                                FontFamily="Segoe UI"
+                                FontSize="12"
+                                Foreground="Black">
+                                <TableCell>
+                                    <Paragraph
+                                        FontFamily="Segoe UI"
+                                        FontSize="12"
+                                        Foreground="Black"
+                                        LineHeight="24">
+                                        IP Address
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell Name="TableCellIP">
+                                    <Paragraph Name="ParagraphIPAdderss">192.168.1.1</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+
+                            <TableRow>
+                                <TableCell ColumnSpan="2">
+                                    <Paragraph
+                                        FontFamily="Segoe UI Semilight"
+                                        FontSize="16"
+                                        Foreground="Black"
+                                        LineHeight="36">
+                                        Device Info
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow
+                                Background="#F1F1F1"
+                                FontFamily="Segoe UI"
+                                FontSize="12"
+                                Foreground="Black">
+                                <TableCell>
+                                    <Paragraph
+                                        FontFamily="Segoe UI"
+                                        FontSize="12"
+                                        Foreground="Black"
+                                        LineHeight="24">
+                                        Remark
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Name="ParagraphConnectedStatus">WPF 为Windows Presentation Foundation的首字母缩写 ，中文译为“Windows呈现基础”，其原来代号为“Avalon”，因与“我佩服”拼音首字母组合一样，国内有人调侃地称之为“我佩服”。由 .NET Framework 3.0 开始引入，与 Windows Communication Foundation及 Windows Workflow Foundation并行为新一代 Windows操作系统以及 WinFX 的三个重大应用程序开发类库。</Paragraph>
+                                </TableCell>
+
+                            </TableRow>
+
+                        </TableRowGroup>
+                    </Table>
+
+                </FlowDocument>
+
+            </FlowDocumentScrollViewer>
+        </ScrollViewer>
+
+        <ScrollViewer Width="200" Style="{StaticResource for_scrollviewer}">
+            <RichTextBox>
+                <FlowDocument>
+                    <Paragraph>
+                        项目进行了老长时间,今天领导看代码发现提交文件时比较费劲,有很多不必要提交的文件,所以需要写一个.gitignore文件来忽略一些文件,项目用git来管理源代码,在克隆下来代码后在项目工程的根目录下就会有一个隐藏的.gitignore文件,如果没有的话可以创建一个txt文本并copy到根目录下并改名为.gitignore
+                        一:删除之前的缓存过的文件
+                        git rm -r --cached ettAiXuePaiNextGen.xcodeproj/ettAiXuePaiNextGen.xcworkspace/xcuserdata/mac.xcuserstate(这个目录可以在SourceTree中的文件状态中获取)
+                        git rm -r --cached .DS_Store
+                        作者：嘟嘟熊123
+                        链接：http://www.jianshu.com/p/f0c4f6081f8e
+                        來源：简书
+                        著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。项目进行了老长时间,今天领导看代码发现提交文件时比较费劲,有很多不必要提交的文件,所以需要写一个.gitignore文件来忽略一些文件,项目用git来管理源代码,在克隆下来代码后在项目工程的根目录下就会有一个隐藏的.gitignore文件,如果没有的话可以创建一个txt文本并copy到根目录下并改名为.gitignore
+                        一:删除之前的缓存过的文件
+                        git rm -r --cached ettAiXuePaiNextGen.xcodeproj/ettAiXuePaiNextGen.xcworkspace/xcuserdata/mac.xcuserstate(这个目录可以在SourceTree中的文件状态中获取)
+                        git rm -r --cached .DS_Store
+                        作者：嘟嘟熊123
+                        链接：http://www.jianshu.com/p/f0c4f6081f8e
+                        來源：简书
+                        著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+
+        </ScrollViewer>
+
+
+    </StackPanel>
+</Window>
