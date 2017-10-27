@@ -9,7 +9,7 @@
 
 
 ## 效果图
-![Image load failure](https://github.com/GanZhiXiong/ZhiXiongYouDaoNoteInstallationPackage/blob/master/Images/ZhiXiong.gif)
+![Image load failure](https://github.com/GanZhiXiong/ZhiXiongScrollForWPF/blob/master/Images/ZhiXiong.gif)
 
 ## 有问题反馈
 在使用中有任何问题，欢迎反馈给我。
@@ -17,7 +17,7 @@
 ## 捐助开发者
 有钱捧个钱场，没钱捧个人场，谢谢各位。
 
-![](https://github.com/GanZhiXiong/ZhiXiongYouDaoNoteInstallationPackage/blob/master/images/Pay/AlipayQRCode.jpg)
+![](https://github.com/GanZhiXiong/ZhiXiongYouDaoNoteInstallationPackage/blob/master/images/Pay/AlipayQRCode.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![](https://github.com/GanZhiXiong/ZhiXiongYouDaoNoteInstallationPackage/blob/master/images/Pay/weixinpay_qrcode.jpg)
 
 ## 感激
